@@ -35,22 +35,34 @@ body {
 <body>
 <h1 style="color:aquamarine;">Welcome to the Music Mash-up Website</h1>
 
-<!-- Buttons to add the .wav files, carolina found the input functions -->
+<!-- Buttons to add the .wav files, carolina found the input functions --->
+<form method=post enctype=multipart/form-data>
 <p2 style = "color:aquamarine;"> Press button to add song, use a .wav file </p2>
-<button1 class="button"><input type= "file" value = "Submit"></button1>
+<button1 class="button"><input type=file name=file>
+         <input type=submit value=Upload></button1>
 <h2></h2>
 <p3 style = "color:aquamarine;"> Press button to add song, use a .wav file</p3>
-<button2 class="button"><input type= "file" value = "Submit"></button2>
+<button2 class="button"><input type=file name=file>
+         <input type=submit value=Upload></button2>
 <h3></h3>
 <p4 style = "color:aquamarine;"> Press button to add song, use a .wav file</p4>
-<button3 class="button"><input type= "file" value = "Submit"></button3>
-
+<button3 class="button"><input type=file name=file>
+         <input type=submit value=Upload></button3>
+<form method=post enctype=multipart/form-data>
+    <!---  <p><input type=file name=file>
+         <input type=submit value=Upload>
+         <form method=post enctype=multipart/form-data>
+      <p><input type=file name=file>
+         <input type=submit value=Upload>
+         <form method=post enctype=multipart/form-data>
+      <p><input type=file name=file>
+         <input type=submit value=Upload>
 <!--this shows the load bar -->
 <h4></h4>
 <audio controls>
- <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4"
-         type='audio/mp4'>
- <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga"
+ <source src=type +".wav"
+         type='audio/wav'>
+ <source src= type + ".oga"
          type='audio/ogg; codecs=vorbis'>
  <p>Your user agent does not support the HTML5 Audio element.</p>
 </audio>
