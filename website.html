@@ -1,29 +1,58 @@
 <!DOCTYPE html>
 <html lang="en-US">
+<title>Music Mash-up</title>
+    <!-- code for the buttons that show shadow when clicked-->
 <style>
 body {
         background-image: url("http://wallpapercave.com/wp/bAIjEk7.jpg");
 } 
  
  </style>
+ <style>
+.button {
+  padding: 10px 15px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
 <head>
 <title>Page Title</title>
 </head>
 <body>
 <h1 style="color:aquamarine;">Welcome to the Music Mash-up Website</h1>
 
+<!-- Buttons to add the .wav files, carolina found the input functions -->
+<p2 style = "color:aquamarine;"> Press button to add song, use a .wav file </p2>
+<button1 class="button"><input type= "file" value = "Submit"></button1>
+<h2></h2>
+<p3 style = "color:aquamarine;"> Press button to add song, use a .wav file</p3>
+<button2 class="button"><input type= "file" value = "Submit"></button2>
+<h3></h3>
+<p4 style = "color:aquamarine;"> Press button to add song, use a .wav file</p4>
+<button3 class="button"><input type= "file" value = "Submit"></button3>
 
-
+<!--this shows the load bar -->
+<h4></h4>
+<audio controls>
+ <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4"
+         type='audio/mp4'>
+ <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga"
+         type='audio/ogg; codecs=vorbis'>
+ <p>Your user agent does not support the HTML5 Audio element.</p>
+</audio>
 </body>
-</html>
-
-
-
-
-
-
-
-
-
-
 </html>
