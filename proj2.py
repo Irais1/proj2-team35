@@ -27,5 +27,5 @@ hope = hope.fade_in(30)
 hope = hope.fade_out(30)
 #	return hope
 #def play_export(finished_audio):
-hope.export("combined9.wav", format='wav')
+hope.export("final_mix.wav", format='wav')
 play(hope)
