@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <title>Music Mash-up</title>
-    <!-- code for the buttons that show shadow when clicked-->
+
+<!-- code for the buttons that get the file from the user-->
 <style>
 body {
         background-image: url("http://wallpapercave.com/wp/bAIjEk7.jpg");
@@ -36,28 +37,41 @@ body {
 <h1 style="color:aquamarine;">Welcome to the Music Mash-up Website</h1>
 
 <!-- Buttons to add the .wav files then press the upload button to upload the files to the python code --->
+
+<!---song1 upload button--->
 <form method=post enctype=multipart/form-data>
 <p2 style = "color:aquamarine;"> Press button to add song, use a .wav file </p2>
 <button1 class="button"><input type=file name1=file>
          <input type=submit value=Upload></button1>
+         
+<!---song2 upload button--->
 <h2></h2>
 <p3 style = "color:aquamarine;"> Press button to add song, use a .wav file</p3>
 <form method=post enctype=multipart/form-data>
 <button2 class="button"><input type=file name2=file>
          <input type=submit value=Upload></button2>
+         
+<!---song3 upload button--->
 <h3></h3>
 <p4 style = "color:aquamarine;"> Press button to add song, use a .wav file</p4>
 <form method=post enctype=multipart/form-data>
 <button3 class="button"><input type=file name3=file>
          <input type=submit value=Upload></button3>
-
-
+         
 <!--this shows the load bar -->
 <h4></h4>
 <audio controls>
- <source src=type +".wav"
+ <source src=name1 +".wav"
          type='audio/wav'>
- <source src= type + ".oga"
+ <source src= name1 + ".oga"
+         type='audio/ogg; codecs=vorbis'>
+ <source src=name2 +".wav"
+         type='audio/wav'>
+ <source src= name2 + ".oga"
+         type='audio/ogg; codecs=vorbis'>
+ <source src=name3 +".wav"
+         type='audio/wav'>
+ <source src= nam3 + ".oga"
          type='audio/ogg; codecs=vorbis'>
  <p>Your user agent does not support the HTML5 Audio element.</p>
 </audio>
