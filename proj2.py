@@ -1,24 +1,21 @@
 from pydub import AudioSegment
 from pydub.playback import play
 from pydub.silence import split_on_silence
-from tkFileDialog import askopenfilename
-import Tkinter as tk
-import glob as gb
 
-'''def getAudio(song1, song2, song3):
+def getAudio(song1, song2, song3):
 	sound = [
  AudioSegment.from_file(song1),
  AudioSegment.from_file(song2),
  AudioSegment.from_file(song3)
  ]
- 	return sound'''
+ 	return sound
 def mixAudio():
-    root = tk.Tk()
+    '''root = tk.Tk()
     root.withdraw()
     
     song1 = askopenfilename()
     song2 = askopenfilename()
-    song3 = askopenfilename()
+    song3 = askopenfilename()'''
     
     sound = [
  AudioSegment.from_file(song1),
@@ -39,7 +36,6 @@ def mixAudio():
     hope = hope.fade_in(30)
     hope = hope.fade_out(30)
 
-    hope.export("combined9.wav", format='wav')
-    sourcefile_wav = gb.glob("*.wav")
+    hope.export("NewSound.wav", format='wav')
     
     return sourcefile_wav[3]
