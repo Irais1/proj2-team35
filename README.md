@@ -14,7 +14,7 @@ There was a bug with the src of the audio, it grabs the correct path, but it doe
 Python code apart for html does run. Using audio was the problem. 
 Songs do mix into one song using beats.py which uses pydub library. 
 All songs need to be in the same file in order for beats.py to run. 
-The main bug was connecting html and python library else everything else works accordingly. 
+The main bug was connecting html and python library else everything else works accordingly. We will continue to work on these issues regardless of the due date, until everything runs perfectly. 
 
 						Works Cited
 "Custom Progress Bar for and HTML5 Elements." Javascript - Custom Progress Bar for and HTML5 Elements - Stack Overflow. N.p., n.d. Web. 18 Mar. 2017. <http://stackoverflow.com/questions/12314345/custom-progress-bar-for-audio-and-progress-html5-elements>.
