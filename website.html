@@ -47,41 +47,67 @@ body {
 
 <p3 style = "color:aquamarine;"> Press button to add song, use a .wav file</p3>
 <form method=post enctype=multipart/form-data>
-<button2  class="button"><input type=file >
-         <input type=submit name = "song2" value=Upload></button2>
+<button2 class="button"><input type=file name="song2" id = "song2">
+         <input onclick="myFunction1()"  type=submit value=Upload></button2>
          
       
 
 <h3></h3>
 <p4 style = "color:aquamarine;"> Press button to add song, use a .wav file</p4>
 <form method=post enctype=multipart/form-data>
-<button3 class="button"><input type=file name3=file>
-         <input type=submit value=Upload></button3>
-         <var song3 = name3>
+<button3 class="button"><input type=file name="song3" id = "song3">
+         <input onclick="myFunction2()"  type=submit value=Upload></button3>
 
 
 <!--this shows the load bar -->
-<h4></h4>
-<!change this later on? saving the path. type = string?!> 
+<h4></h4> 
 
-<audio controls>
- <script>
-	function myFunction() {
-   	 var song1 = document.getElementById("song1").src;
-    		//console.log(x);
-    		 document.getElementById("song1").innerHTML = song1;
-		}
-	</script>
-	
- <source src="song1"
-         type='audio/wav'>
- <source src= type + name2 + ".wav"
-         type='audio/wav;>
- <source src= type + name3 + ".wav"
-         type='audio/wav;>
- <source {{mixAudio(song1, song2, song3)}}>
- 
+<audio controls autoplay>	
+
+ <source id='songOne' src='Bailando.wav'  type='audio/wav'> 
+ <source id ='songTwo' src= 'tearinmyheart.wav' type='audio/wav'> 
+ <source id = 'songThree' src= 'riverflowsinyou.wav' type='audio/wav'>
+
  <p>Your user agent does not support the HTML5 Audio element.</p>
 </audio>
+
 </body>
+ <script type="text/javascript">
+	function myFunction() {
+	
+   	var song1 = document.getElementById("song1").files[0].name;
+   	var filename = song1.replace(/^.*\\/, "");
+   	
+   	var songOne = document.getElementById("songOne");
+
+   	songOne.setAttribute('src', filename);
+   
+    	alert(document.getElementById("songOne").src);
+    		
+		}
+	function myFunction1() {
+	
+   	var song2 = document.getElementById("song2").value;
+   	var filename = song2.replace(/^.*\\/, "");
+   	
+   	var songTwo = document.getElementById("songTwo");
+
+   	songTwo.setAttribute('src', filename);
+   
+    	alert(document.getElementById("songTwo").src);
+    		
+		}
+	function myFunction2() {
+	
+   	var song3 = document.getElementById("song3").value;
+   	var filename = song3.replace(/^.*\\/, "");
+   	
+   	var songThree = document.getElementById("songThree");
+
+   	songThree.setAttribute('src', filename);
+   
+    	alert(document.getElementById("songThree").src);
+    		
+		}
+	</script>
 </html>
