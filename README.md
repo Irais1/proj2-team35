@@ -26,3 +26,8 @@ The main bug was connecting html and python library else everything else works a
 Jiaaro. "Jiaaro/pydub." GitHub. N.p., 17 Feb. 2017. Web. 18 Mar. 2017. <https://github.com/jiaaro/pydub>.
 Jiaaro. "Jiaaro/pydub." GitHub. N.p., n.d. Web. 18 Mar. 2017. <https://github.com/jiaaro/pydub/blob/master/API.markdown>.
 "Pydub by Jiaaro." Jiaaro/pydub @ GitHub. N.p., n.d. Web. Mar. 2017. <http://pydub.com/>.
+
+
+We got a lot of help from Eros Gonzalez. He helped us understand, in more detail how flaske works.
+
+We also got a lot of help from Araceli Gopar, trying to debug our code when the html and python files would not connect.
