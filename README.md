@@ -2,7 +2,7 @@ Music Mash-Up
 Irais Gopar, Jashmae Baculpo, Carolina Pantoja 
 CST-205
 03-15-17
-Link to GitHub repo
+Link to GitHub repo:https://github.com/Irais1/proj2-team35.git
 Link to C9
 Coleman
 
