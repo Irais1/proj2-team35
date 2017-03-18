@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, url_for, redirect, url_for
 from string import Template
 import requests
 import os
-from beats import mixAudio
+from proj2 import mixAudio
 from Werkzeug.utils import secure_filename
 
 
